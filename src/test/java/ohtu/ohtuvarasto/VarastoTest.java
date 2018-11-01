@@ -124,7 +124,7 @@ public class VarastoTest {
     @Test
     public void kolmasKonstruktoriTest() {
         Varasto var = new Varasto(1.0, 0.0);
-        assertEquals(0, var.getTilavuus(), vertailuTarkkuus);
+        assertEquals(1, var.getTilavuus(), vertailuTarkkuus);
     }
     
 }   
