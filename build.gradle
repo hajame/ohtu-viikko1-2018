@@ -50,3 +50,7 @@ jacocoTestReport {
         })
     }
 }
+
+run {
+    standardInput = System.in
+}
