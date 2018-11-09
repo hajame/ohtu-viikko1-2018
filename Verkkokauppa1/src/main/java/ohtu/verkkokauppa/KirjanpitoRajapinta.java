@@ -5,13 +5,16 @@
  */
 package ohtu.verkkokauppa;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author hameha
  */
-public interface PankkiRajapinta {
+public interface KirjanpitoRajapinta {
 
-    boolean tilisiirto(String nimi, int viitenumero, String tililta, String tilille, int summa);
+    ArrayList<String> getTapahtumat();
+
+    void lisaaTapahtuma(String tapahtuma);
     
-    public KirjanpitoRajapinta getKirjanpito();
 }

@@ -2,9 +2,9 @@ package ohtu.verkkokauppa;
 
 public class Pankki implements PankkiRajapinta {
     
-    private Kirjanpito kirjanpito;
+    private KirjanpitoRajapinta kirjanpito;
 
-    public Pankki(Kirjanpito kirjanpito) {
+    public Pankki(KirjanpitoRajapinta kirjanpito) {
         this.kirjanpito = kirjanpito;
     }
 
@@ -15,5 +15,9 @@ public class Pankki implements PankkiRajapinta {
 
         // täällä olisi koodi joka ottaa yhteyden pankin verkkorajapintaan
         return true;
+    }
+
+    public KirjanpitoRajapinta getKirjanpito() {
+        return kirjanpito;
     }
 }

@@ -40,4 +40,8 @@ public class Kauppa {
         return pankki.tilisiirto(nimi, viite, tiliNumero, kaupanTili, summa);
     }
 
+    public PankkiRajapinta getPankki() {
+        return pankki;
+    }
+
 }
