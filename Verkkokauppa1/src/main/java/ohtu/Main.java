@@ -1,5 +1,6 @@
 package ohtu;
 
+import java.util.List;
 import ohtu.verkkokauppa.Kauppa;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
@@ -8,7 +9,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ApplicationContext ctx = new FileSystemXmlApplicationContext("src/main/resources/spring-context.xml");
+        ApplicationContext ctx = new FileSystemXmlApplicationContext
+                ("src/main/resources/spring-context.xml");
  
 //        Kauppa kauppa = (Kauppa) ctx.getBean("kauppa");
         
@@ -31,8 +33,10 @@ public class Main {
         kauppa.tilimaksu("Arto Vihavainen", "3425-1652");
 
         // kirjanpito
-        for (String tapahtuma : kauppa.getPankki().getKirjanpito().getTapahtumat()) {
-            System.out.println(tapahtuma);
+        List<String> tapahtumat = kauppa.getPankki()
+                .getKirjanpito().getTapahtumat();
+        for (int i = 0; i < tapahtumat.size(); i++) {
+            System.out.println(tapahtumat.get(i));
         }
     }
 }
