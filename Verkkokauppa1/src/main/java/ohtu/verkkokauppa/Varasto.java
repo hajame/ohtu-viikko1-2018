@@ -2,11 +2,16 @@ package ohtu.verkkokauppa;
 
 import java.util.*;
 
+import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
+
+@Component
 public class Varasto implements VarastoRajapinta {
     
     private KirjanpitoRajapinta kirjanpito;
     private HashMap<Tuote, Integer> saldot;  
     
+    @Autowired
     public Varasto(KirjanpitoRajapinta kirjanpito) {
         this.kirjanpito = kirjanpito;
         saldot = new HashMap<Tuote, Integer>();
@@ -15,10 +20,10 @@ public class Varasto implements VarastoRajapinta {
             
     @Override
     public Tuote haeTuote(int id){
-        for (Tuote t : saldot.keySet()) {
+        for (Iterator<Tuote> it = saldot.keySet().iterator(); it.hasNext();) {
+            Tuote t = it.next();
             if ( t.getId()==id) return t;
         }
-        
         return null;
     }
 
