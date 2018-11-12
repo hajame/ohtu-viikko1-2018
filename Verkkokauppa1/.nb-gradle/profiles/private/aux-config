@@ -5,12 +5,6 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
       <group>
-        <file>file:/Users/mluukkai/opetus/koodit/Verkkokauppa1/build.gradle</file>
-      </group>
-    </open-files>
-    <editor-bookmarks lastBookmarkId="0" xmlns="http://www.netbeans.org/ns/editor-bookmarks/2"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-      <group>
         <file>file:/home/local/hameha/NetBeansProjects/ohtu-viikko1-2018/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Viitegeneraattori.java</file>
         <file>file:/home/local/hameha/NetBeansProjects/ohtu-viikko1-2018/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Kauppa.java</file>
         <file>file:/home/local/hameha/NetBeansProjects/ohtu-viikko1-2018/Verkkokauppa1/src/main/resources/spring-context.xml</file>
@@ -21,6 +15,12 @@
         <file>file:/home/local/hameha/NetBeansProjects/ohtu-viikko1-2018/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/VarastoRajapinta.java</file>
         <file>file:/home/local/hameha/NetBeansProjects/ohtu-viikko1-2018/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/Kirjanpito.java</file>
         <file>file:/home/local/hameha/NetBeansProjects/ohtu-viikko1-2018/Verkkokauppa1/src/main/java/ohtu/verkkokauppa/KirjanpitoRajapinta.java</file>
+      </group>
+    </open-files>
+    <editor-bookmarks lastBookmarkId="0" xmlns="http://www.netbeans.org/ns/editor-bookmarks/2"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+      <group>
+        <file>file:/home/local/hameha/NetBeansProjects/ohtu-viikko2-2018/Verkkokauppa1/src/main/java/ohtu/Main.java</file>
       </group>
     </open-files>
   </auxiliary>
