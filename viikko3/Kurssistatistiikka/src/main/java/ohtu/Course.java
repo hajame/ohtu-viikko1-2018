@@ -16,8 +16,6 @@ public class Course {
     public void setFullName(String fullName) {
         this.fullName = fullName;
     }
-
-    
     
     public void setWeek(int week) {
         this.week = week;
