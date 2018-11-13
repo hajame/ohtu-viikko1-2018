@@ -1,6 +1,8 @@
 package ohtu;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -17,15 +19,23 @@ public class Main {
 
         String url = "https://studies.cs.helsinki.fi/courses/students/" + studentNr + "/submissions";
         String courseUrl = "https://studies.cs.helsinki.fi/courses/courseinfo";
+        String ohtuStats = "https://studies.cs.helsinki.fi/courses/ohtu2018/stats";
+        String railsStats = "https://studies.cs.helsinki.fi/courses/rails2018/stats";
+        
         String bodyText = Request.Get(url).execute().returnContent().asString();
         String courseBodyText = Request.Get(courseUrl).execute().returnContent().asString();
-
+        String ohtuResponse = Request.Get(ohtuStats).execute().returnContent().asString();
+        String railsResponse = Request.Get(railsStats).execute().returnContent().asString();
+        
 //        System.out.println("json-muotoinen data:");
 //        System.out.println( bodyText );
         Gson mapper = new Gson();
         Submission[] subs = mapper.fromJson(bodyText, Submission[].class);
         Course[] courses = mapper.fromJson(courseBodyText, Course[].class);
-
+        
+        
+        
+        
         System.out.println("opiskelijanumero " + studentNr + "\n");
 
         HashSet<String> kurssit = new HashSet<>();
