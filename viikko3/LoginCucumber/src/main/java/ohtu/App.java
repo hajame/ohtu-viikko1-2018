@@ -7,7 +7,7 @@ import ohtu.io.IO;
 import ohtu.services.AuthenticationService;
 
 public class App {
-
+    
     private IO io;
     private AuthenticationService auth;
 

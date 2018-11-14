@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         // ÄLÄ laita githubiin omaa opiskelijanumeroasi
-        String studentNr = "012345678";
+        String studentNr = "014812242";
         if (args.length > 0) {
             studentNr = args[0];
         }
@@ -81,7 +81,6 @@ public class Main {
             palautukset += course.get(key).getAsJsonObject().get("students").getAsInt();
             tunnit += course.get(key).getAsJsonObject().get("hour_total").getAsInt();
             tehtavat += course.get(key).getAsJsonObject().get("exercise_total").getAsInt();
-
         }
         System.out.println("kurssilla yhteensä " + palautukset + " palautusta, " 
                 + "palautettuja tehtavia " + tehtavat + " kpl, " + 
