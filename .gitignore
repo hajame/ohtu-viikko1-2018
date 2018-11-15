@@ -1,4 +1,4 @@
-*build
-*.nb-gradle
+*/build
+*/.nb-gradle
 *.tmp
 
