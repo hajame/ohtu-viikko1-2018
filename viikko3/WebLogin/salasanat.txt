@@ -11,3 +11,5 @@ arto83725;akkep
 arto2092;akkep
 arto6191;akkep
 arto16082;akkep
+liisa;l1
+harri;sala1234
