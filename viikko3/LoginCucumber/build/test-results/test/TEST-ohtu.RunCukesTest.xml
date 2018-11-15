@@ -17,7 +17,7 @@ Feature: A new user account can be created if a proper unused username and passw
 
 9 Scenarios (?[32m9 passed?[0m)
 30 Steps (?[32m30 passed?[0m)
-0m0.159s
+0m0.127s
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
