@@ -29,13 +29,28 @@ public class Stepdefs {
         WebElement element = driver.findElement(By.linkText("register new user"));       
         element.click(); 
     }
-
-    @When("^a valid username \"([^\"]*)\" and password \"([^\"]*)\" and matching password confirmation are entered$")
-    public void a_valid_username_and_password_and_matching_password_confirmation_are_entered(String username, String password) throws Throwable {
+    
+    @Given("^user with username \"([^\"]*)\" with password \"([^\"]*)\" is successfully created$")
+    public void user_with_username_with_password_is_successfully_created(String username, String password) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
+        command_new_user_is_selected();
         registerWith(username, password, password);
     }
-    
+
+    @Given("^user with username \"([^\"]*)\" and password \"([^\"]*)\" is tried to be created$")
+    public void user_with_username_and_password_is_tried_to_be_created(String username, String password) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        command_new_user_is_selected();
+        registerWith(username, password, password);
+        WebElement element = driver.findElement(By.linkText("back to home"));    
+        element.click(); 
+    }
+
+    @When("^a nonexistent username \"([^\"]*)\" and password \"([^\"]*)\" and matching password confirmation are entered$")
+    public void a_nonexistent_username_and_password_and_matching_password_confirmation_are_entered(String username, String password) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        throw new PendingException();
+    }
     
     @When("^correct username \"([^\"]*)\" and password \"([^\"]*)\" are given$")
     public void username_correct_and_password_are_given(String username, String password) throws Throwable {
@@ -63,6 +78,13 @@ public class Stepdefs {
         // Write code here that turns the phrase above into concrete actions
         registerWith(username, password, password);
     }
+    
+    @When("^a valid username \"([^\"]*)\" and valid password \"([^\"]*)\" and matching password confirmation are entered$")
+    public void a_valid_username_and_valid_password_and_matching_password_confirmation_are_entered(String username, String password) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        registerWith(username, password, password);
+    }
+
     
     @When("^a valid username \"([^\"]*)\" and valid password \"([^\"]*)\" and non matching password \"([^\"]*)\" confirmation are entered$")
     public void a_valid_username_and_valid_password_and_non_matching_password_confirmation_are_entered(String username, String password, String confirmation) throws Throwable {

@@ -34,8 +34,27 @@ public class AuthenticationService {
             status.addError("username should have at least 3 characters");
         }
         
+        for (char a : username.toCharArray()) {
+            if (!(Character.isAlphabetic(a) && Character.isLowerCase(a))) {
+                status.addError("username should have contain only lowercase characters");
+            }
+        }
+        
         if (password.length()<8 ) {
             status.addError("password should have at least 8 characters");
+        }
+        
+        boolean number = false, special = false;
+        for (char a : password.toCharArray()) {
+            if (Character.isDigit(a)) {
+                number = true;
+            } else if (!Character.isAlphabetic(a)) {
+                special = true;
+            }
+        }
+        
+        if (!number && !special) {
+            status.addError("password should contain a digit or a special character");
         }
         
         if (!password.equals(passwordConfirmation)) {
