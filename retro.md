@@ -2,7 +2,7 @@
 
 Retrospektiivissä projektin tiimi kokoontuu työskentelyjakson, kuten sprintin, jälkeen pohtimaan ja kehittämään ryhmän työskentelyä. Retrospektiivissä voidaan esimerkiksi listata seuraavanlaisia työhön liittyviä asioita:
 
-- mitä olis hyvä alkaa tekemään?
+- mitä olisi hyvä alkaa tekemään?
 - millaiset työtavat pitäisi jättää pois?
 - minkä tekemistä olisi hyvä jatkaa?
 - mitä pitäisi tehdä enemmän?
