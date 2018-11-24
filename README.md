@@ -2,6 +2,7 @@
 
 - [viikon 3 palautukset](https://github.com/hajame/ohtu-viikko1-2018/tree/master/viikko3)
   - [tehtävän 6 UML](https://github.com/hajame/ohtu-viikko1-2018/blob/master/viikko3/LoginCucumber/viikko3_teht6_UML.jpg)
+- [viikon 4 palautukset](https://github.com/hajame/ohtu-viikko1-2018/tree/master/viikko4)
 
 ### Viikot 1 & 2
 
