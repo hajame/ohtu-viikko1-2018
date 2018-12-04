@@ -19,6 +19,8 @@ public class Summa implements Komento {
     private Button nollaa;
     private Button undo;
     private Sovelluslogiikka sovellus;
+    private String tulosmuisti;
+    private String syotemuisti;
 
     public Summa(TextField tuloskentta, TextField syotekentta, Button nollaa, Button undo, Sovelluslogiikka sovellus) {
         this.tuloskentta = tuloskentta;
@@ -31,6 +33,8 @@ public class Summa implements Komento {
     @Override
     public void suorita() {
         try {
+            tulosmuisti = tuloskentta.getText();
+            syotemuisti = syotekentta.getText();
             sovellus.plus(Integer.parseInt(syotekentta.getText()));
         } catch (Exception e) {
         }
@@ -38,7 +42,7 @@ public class Summa implements Komento {
         int laskunTulos = sovellus.tulos();
         syotekentta.setText("");
         tuloskentta.setText("" + laskunTulos);
-        
+
         if (laskunTulos == 0) {
             nollaa.disableProperty().set(true);
         } else {
@@ -50,7 +54,9 @@ public class Summa implements Komento {
 
     @Override
     public void peru() {
-
+        tuloskentta.setText(tulosmuisti);
+        syotekentta.setText(syotemuisti);
+        sovellus.setTulos(Integer.parseInt(tulosmuisti));
     }
 
     public TextField getTuloskentta() {

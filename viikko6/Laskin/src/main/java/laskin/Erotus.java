@@ -20,6 +20,8 @@ public class Erotus implements Komento {
     private Button nollaa;
     private Button undo;
     private Sovelluslogiikka sovellus;
+    private String tulosmuisti;
+    private String syotemuisti;
 
     public Erotus(TextField tuloskentta, TextField syotekentta, Button nollaa, Button undo, Sovelluslogiikka sovellus) {
         this.tuloskentta = tuloskentta;
@@ -32,6 +34,8 @@ public class Erotus implements Komento {
     @Override
     public void suorita() {
         try {
+            tulosmuisti = tuloskentta.getText();
+            syotemuisti = syotekentta.getText();
             sovellus.miinus(Integer.parseInt(syotekentta.getText()));
         } catch (Exception e) {
         }
@@ -51,7 +55,9 @@ public class Erotus implements Komento {
 
     @Override
     public void peru() {
-
+        tuloskentta.setText(tulosmuisti);
+        syotekentta.setText(syotemuisti);
+        sovellus.setTulos(Integer.parseInt(tulosmuisti));
     }
 
     public TextField getTuloskentta() {
