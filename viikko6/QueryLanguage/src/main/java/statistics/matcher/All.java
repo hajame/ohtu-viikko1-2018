@@ -12,9 +12,6 @@ public class All implements Matcher {
 
     @Override
     public boolean matches(Player p) {
-        for (Matcher matcher : matchers) {
-            return true;
-        }
         return true;
     }
 }
