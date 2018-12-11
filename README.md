@@ -5,6 +5,7 @@
 - [viikon 4 palautukset](https://github.com/hajame/ohtu-viikko1-2018/tree/master/viikko4)
 - [viikon 5 palautukset](https://github.com/hajame/ohtu-viikko1-2018/tree/master/viikko5)
 - [viikon 6 palautukset](https://github.com/hajame/ohtu-viikko1-2018/tree/master/viikko6)
+- [viikon 7 palautukset](https://github.com/hajame/ohtu-viikko1-2018/tree/master/viikko7)
 
 ### Viikot 1 & 2
 
